@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context=".MainActivity">
+
+    <TextView
+            android:id="@+id/text_android_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android ID value"
+            app:layout_constraintStart_toStartOf="@+id/guideline" android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp" android:layout_marginBottom="37dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_wifi_id"/>
+
+    <TextView
+            android:id="@+id/text_imei3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMEI Number value"
+            app:layout_constraintStart_toStartOf="@+id/guideline" android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp" android:layout_marginBottom="44dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_android_id"/>
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="IMEI number"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_imei3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline" android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"/>
+
+    <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="Android ID"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_android_id" android:layout_marginStart="32dp"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="125dp"/>
+
+    <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="-11dp"/>
+    <TextView
+            android:text="WiFi Mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" app:layout_constraintBaseline_toBaselineOf="@+id/text_wifi_id"
+            android:layout_marginStart="32dp"/>
+    <TextView
+            android:text="Wifi mac value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_wifi_id"
+            app:layout_constraintStart_toStartOf="@+id/guideline" android:layout_marginLeft="1dp"
+            android:layout_marginStart="1dp" android:layout_marginBottom="31dp"
+            app:layout_constraintBottom_toTopOf="@+id/text_bluetooth_id"/>
+    <TextView
+            android:text="Bluetooth Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_bluetooth_id"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="16dp" android:layout_marginTop="285dp" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toEndOf="@+id/textView6"/>
+    <TextView
+            android:text="Bluetooth id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_bluetooth_id"
+            app:layout_constraintEnd_toStartOf="@+id/guideline" android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp" app:layout_constraintStart_toStartOf="@+id/guideline2"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+
+</android.support.constraint.ConstraintLayout>
